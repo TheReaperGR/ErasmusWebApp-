@@ -1,0 +1,183 @@
+
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+  .nav-links li {
+    margin: 10px;
+  }
+}
+
+.heading {
+
+  color: white;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  font-size: 20px;
+
+}
+
+nav {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  min-height: 8vh;
+
+  background-color: teal;
+
+  font-family: "Montserrat", sans-serif;
+
+}
+.nav-links {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  max-height: 100%;
+  max-width: 95%;
+  
+
+}
+
+.nav-links li {
+
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: none;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+  padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+
+  background-color: lightseagreen;
+
+}
+
+.nav-links li a.active {
+
+  background-color: #4caf50;
+
+}
+
+
+
+
+body{
+  color:rgb(0, 0, 0);
+  font-family: Verdana;
+  text-align: center;
+}
+
+.menu {
+background-color: #333;
+color: #fff;
+padding: 10px;
+}
+
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.menu li {
+margin: 0 10px;
+}
+
+.menu a {
+color: #fff;
+text-decoration: none;
+}
+
+/* Style form container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 0 20px; 
+  box-sizing: border-box; 
+
+}
+
+.form-panel {
+  
+  background-color: #eee;
+  padding: 20px;
+  margin: auto auto; 
+  max-width: 400px; 
+  flex: 1;
+}
+
+.form-panel h2 {
+text-align: center;
+}
+
+.form-panel form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.form-panel label {
+font-weight: bold;
+}
+
+.form-panel input {
+padding: 5px;
+margin: 10px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
+width: 100%;
+max-width: 300px;
+}
+
+.form-panel input[type="submit"] {
+padding: 10px 20px;
+background-color: #333;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+}
+.footer {
+background-color: blue;
+padding: 10px;
+position: fixed; 
+bottom: 0; 
+left: 0;
+right: 0; 
+}

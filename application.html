@@ -1,0 +1,125 @@
+
+
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="media/uoplogo.png">
+<link rel="stylesheet" type="text/css" href="styles/application.css">
+<script src="scripts/appcheck.js"></script>
+<script src="scripts/fillform.js"></script>
+<script src="scripts/apply.js"></script>
+<script src="scripts/callautofill.js"></script>
+
+<title>Uop Erasmus | Application</title>
+<style>body {background-color: rgb(231, 99, 192);}</style>
+</head>
+<body>
+    <body>
+      <div class="parent">
+        <header>
+          <nav>
+          <div class="heading">
+              <h4>Erasmus UOP</h4>
+              <ul class="nav-links">
+  
+                  <li><a href="index.html">Home</a></li>
+          
+                  <li><a href="login.html">login</a></li>
+          
+                  <li><a href="sign-up.html">sign up</a></li>
+          
+                  <li><a href="more.html">More info</a></li>
+  
+                  <li><a class="active" href="application.html">Apply</a> </li>
+                  <li><a href="reqs.html">Requirements</a> </li>
+                </ul>
+          </div>
+        </nav>
+        </header>
+    <div class="form-panel">
+            <h2>Form</h2>
+            <form>
+              <label>Ονομα</label><br>
+              <input type="text" id="name" placeholder="Ονομα" required disabled><br><br>
+          
+              <label>Επιθετο</label><br>
+              <input type="text" id="lastname" placeholder="Επιθετο" required disabled> <br><br>
+          
+              <label>Αριθμος Μητρωου</label><br>
+              <input type="text" id="AM" placeholder="Αριθμος Μητρωου" required disabled> <br><br>
+          
+              <label>Ποσοστο περασμενων μαθηματων</label><br>
+              <input type="number" id="passedLessonsPre" placeholder="Ποσοστο περασμενων μαθηματων" required><br><br>
+          
+              <label>Μεσος Ορος Περασμενων Μαθηματων</label><br>
+              <input type="number" id="avgPassedLessons" placeholder="MO περασμενων μαθηματων" required><br><br>
+          
+              <label>Επιπεδο Γνωσης Αγγλικης Γλωσσας</label><br>
+              <input type="radio" id="englishLevelA1" name="englishLevel" value="A1" required>
+              <label for="englishLevelA1">A1</label>
+              <input type="radio" id="englishLevelA2" name="englishLevel" value="A2" required>
+              <label for="englishLevelA2">A2</label>
+              <input type="radio" id="englishLevelB1" name="englishLevel" value="B1" required>
+              <label for="englishLevelB1">B1</label>
+              <input type="radio" id="englishLevelB2" name="englishLevel" value="B2" required>
+              <label for="englishLevelB2">B2</label>
+              <input type="radio" id="englishLevelC1" name="englishLevel" value="C1" required>
+              <label for="englishLevelC1">C1</label>
+              <input type="radio" id="englishLevelC2" name="englishLevel" value="C2" required>
+              <label for="englishLevelC2">C2</label><br><br>
+          
+              <label>Γνωση Επιπλεον Ξενης Γλωσσας</label><br>
+              <input type="radio" id="yesExtraLang" name="yesExtraLang" value="yes" required>
+              <label for="yesExtraLang">Ναι</label><br>
+              <input type="radio" id="noExtraLang" name="yesExtraLang" value="no" required>
+              <label for="noExtraLang">Οχι</label><br><br>
+          
+              <label for="partnerUnis#1">Συνεργαζομενα Πανεπιστημια #1 Επιλογη</label><br>
+              <select name="partnerUnis#1" id="partnerUnis#1" required>
+                  <option value="UOA">Πανεπιστημιο Αμστερνταμ</option>
+                  <option value="UOM">Πανεπιστημιο Μοναχου</option>
+                  <option value="UOB">Πανεπιστημιο Βαρκελονης</option>
+                  <option value="UOL">Πανεπιστημιο Λετονιας</option>
+              </select><br><br><br><br>
+          
+              <label for="partnerUnis#2">Συνεργαζομενα Πανεπιστημια #2 Επιλογη</label><br>
+              <select name="partnerUnis#2" id="partnerUnis#2" required>
+                  <option value="UOA">Πανεπιστημιο Αμστερνταμ</option>
+                  <option value="UOM">Πανεπιστημιο Μοναχου</option>
+                  <option value="UOB">Πανεπιστημιο Βαρκελονης</option>
+                  <option value="UOL">Πανεπιστημιο Λετονιας</option>
+              </select><br><br>
+          
+              <label for="partnerUnis#3">Συνεργαζομενα Πανεπιστημια #3 Επιλογη</label><br>
+              <select name="partnerUnis#3" id="partnerUnis#3" required>
+                  <option value="UOA">Πανεπιστημιο Αμστερνταμ</option>
+                  <option value="UOM">Πανεπιστημιο Μοναχου</option>
+                  <option value="UOB">Πανεπιστημιο Βαρκελονης</option>
+                  <option value="UOL">Πανεπιστημιο Λετονιας</option>
+              </select><br><br><br>
+          
+              <label for="fullGrade">Αναλυτικη Βαθμολογια</label>
+              <input type="file" id="fullGrade" name="fullGrade" accept="application/pdf" required><br><br>
+          
+              <label for="englishCert">Πτυχιο Αγγλικων</label>
+              <input type="file" id="englishCert" name="englishCert" accept="application/pdf" required><br><br>
+          
+              <label for="otherCert">Πτυχιο αλλων Ξενων Γλωσσων</label>
+              <input type="file" id="otherCert" name="otherCert" multiple accept="application/pdf" required><br><br>
+          
+              <p>Συμφωνω με τους <a href="media/icrc-002-0173.pdf">ορους χρησης</a> <input type="checkbox" id="checkbox" name="checkbox" required></p>
+              <input type="submit" id="submition" name="submition" value="Υποβολη" onclick="submitForm(event)">
+          </form>
+          
+    </div>
+ </div>
+</body>
+
+
+
+
+
+</html>

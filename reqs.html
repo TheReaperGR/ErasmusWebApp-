@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Erasmus Exchange Program">
+    <link rel="shortcut icon" href="media/uoplogo.png">
+    <title>Uop Erasmus | Requirements</title>
+    <link rel="stylesheet" href="styles/reqs.css">
+    <script src="scripts/checklogin.js"></script>
+    <script src="scripts/requirements.js"></script>
+
+
+    <style type="text/css"></style>
+    <style>body {background-color: rgb(231, 99, 192);}</style>
+
+<body>
+    <div class="parent">
+        <header>
+          <nav>
+          <div class="heading">
+              <h4>Erasmus UOP</h4>
+              <ul class="nav-links">
+  
+                  <li><a href="index.html">Home</a></li>
+          
+                  <li><a href="login.html">login</a></li>
+          
+                  <li><a href="sign-up.html">sign up</a></li>
+          
+                  <li><a href="more.html">More info</a></li>
+  
+                  <li><a href="application.html">Apply</a> </li>
+
+                  <li><a class="active" href="#">Requirements</a> </li>
+                </ul>
+          </div>
+        </nav>
+        </header>
+        <main> 
+            <table style="background-color: rgb(0, 255, 179);">
+                <tr>
+                  <th style="text-align: left; padding: 8px;">Τρέχον έτος σπουδών:</th>
+                  <td style="text-align: left; padding: 8px;">Aπαίτηση: μεγαλύτερο ή ίσο του 2ου έτους.</td>
+                </tr>
+                <tr>
+                  <th style="text-align: left; padding: 8px;">Ποσοστό «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών: </th>
+                  <td style="text-align: left; padding: 8px;">Aπαίτηση: μεγαλύτερο ή ίσο του 70% του συνόλου των μαθημάτων.</td>
+                </tr>
+                <tr>
+                  <th style="text-align: left; padding: 8px;">Μέσος όρος των «περασμένων» μαθημάτων έως το προηγούμενο έτος σπουδών:</th>
+                  <td style="text-align: left; padding: 8px;">Aπαίτηση: μεγαλύτερος ή ίσος του 6.50.</td>
+                </tr>
+                <tr>
+                  <th style="text-align: left; padding: 8px;">Πιστοποιητικό γνώσης της αγγλικής γλώσσας:</th>
+                  <td style="text-align: left; padding: 8px;">Aπαίτηση: κατ’ ελάχιστον «καλή
+                    γνώση της αγγλικής γλώσσας», που αντιστοιχεί σε επίπεδο B2 ή ανώτερο.</td>
+                </tr>
+
+              </table>
+              
+              <div class="form-wrapper">
+              <form>
+              <label for="currentyear"> Τρέχον έτος σπουδών</label><br>
+              <select name="currentyear" id="currentyear">
+                  <option value="1">1o</option>
+                  <option value="2">2o</option>
+                  <option value="3">3o</option>
+                  <option value="4">4o</option>
+                </select><br><br>
+
+                <label for="number">Ποσοστό «περασμένων» μαθημάτων έως και το προηγούμενο έτος:</label>
+                <input type="number" id="number" name="number" min="0" max="100">
+                <br><br>
+              
+                <label for="number">Μέσος όρος των «περασμένων» μαθημάτων έως και το προηγούμενο έτος σπουδών:</label>
+                <input type="number" id="number2" name="number"">
+                <br><br>
+
+                <label for="english">Πιστοποιητικό γνώσης της αγγλικής γλώσσας:</label>
+                <br>
+                <input type="radio" id="A1" name="english" value="a1">
+                <label for="a1">A1</label><br>
+                <input type="radio" id="A2" name="english" value="a2">
+                <label for="a2">A2</label><br>
+                <input type="radio" id="B1" name="english" value="b1">
+                <label for="b1">B1</label><br>
+                <input type="radio" id="B2" name="english" value="b2">
+                <label for="b2">B2</label><br>
+                <input type="radio" id="C1" name="english" value="c1">
+                <label for="c1">C1</label><br>
+                <input type="radio" id="C2" name="english" value="c2">
+                <label for="c1">C2</label><br><br>
+                <input type="submit" value="Ελεγχος" onclick="checkreq()">
+                 </form>
+                </div>
+
+                <div class="text">
+                        <p>
+                            <img src="media/papel.jpg" height="50%" width="50%" class="img2"><br>
+                            ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ<br>
+                            1.	Αίτηση εκδήλωσης ενδιαφέροντος: διατίθεται σε ηλεκτρονική μορφή <a href="www.uop.gr/erasmus/">εδω</a><br><br>
+                             2.	Πιστοποιητικό αναλυτικής βαθμολογίας [Ζητείται αυτεπάγγελτα με τη σύμφωνη γνώμη του αιτούντος] <br><br>
+                            3.	Αντίγραφο πιστοποιητικού γνώσης ξένης γλώσσας<br><br>
+                                Συμπληρωματικά για μεταπτυχιακούς φοιτητές: Έγγραφο σύμφωνης γνώμης από τον Επιστημονικό Υπεύθυνο του Προγράμματος.<br><br>
+                                Συμπληρωματικά, για υποψήφιους διδάκτορες: Έγγραφο σύμφωνης γνώμης από την Τριμελή Επιτροπή<br><br>
+                                Τα δικαιολογητικά υποβάλλονται μόνο μέσω ηλεκτρονικού ταχυδρομείου απευθείας στα Γραφεία Erasmus, ως εξής:
+                                <a href="mailto:erasmus@uop.gr" title="Αποστολή e-mail">erasmus@uop.gr</a><br> Γραφείο Erasmus (ΝΑΥΠΛΙΟ)  τηλ. 27520 70222<br>
+                                <b>Περισοτερες πληροφοριες <a href="media/info.pdf">εδω</a></b>
+
+                </div>
+    </body>
+  </html>
+  
+</html>

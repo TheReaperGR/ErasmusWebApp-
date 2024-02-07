@@ -1,0 +1,245 @@
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+  .nav-links li {
+    margin: 10px;
+  }
+}
+
+
+nav {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  min-height: 8vh;
+
+  background-color: teal;
+
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.heading {
+
+  color: white;
+
+  text-transform: uppercase;
+
+  letter-spacing: 5px;
+
+  font-size: 20px;
+
+}
+
+.nav-links {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  max-height: 100%;
+  max-width: 95%;
+  
+
+}
+
+.nav-links li {
+
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  color: white;
+
+  text-decoration: none;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+  padding: 14px 16px;
+
+}
+
+.nav-links a:hover:not(.active) {
+
+  background-color: lightseagreen;
+
+}
+
+.nav-links li a.active {
+
+  background-color: #4caf50;
+
+}
+
+
+  
+  /* rest of the CSS remains the same */
+  header{
+    grid-area: h;
+    background-color: lavender;
+  }
+  
+  main{
+    grid-area: m;
+    background-color: lavender;
+  }
+  
+  aside{
+    grid-area: a;
+    background-color: lavender;
+  }
+  
+  footer{
+    grid-area: f;
+    padding: 1rem;
+    background-color: lavender;
+  }
+  
+  body{
+    color:rgb(0, 0, 0);
+    font-family: Verdana;
+    text-align: center;
+  }
+  
+  .parent{
+    max-height: 100%;
+    max-width: 95%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+ .img1{
+  max-height: 100%;
+  max-width: 95%;
+ }
+
+
+
+  .p1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: #bbff00;
+    color: rgb(0, 0, 0);
+  }
+  .p2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: #bbff00;
+    color: rgb(0, 0, 0);
+  }
+
+  .p3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: #bbff00;
+    color: rgb(0, 0, 0);
+  }
+
+.sp1{
+  background-color: lavender;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 0px; 
+  align-content: center;
+}
+
+
+  /* Small Screens*/
+  @media screen and (min-width:320px) and (max-width: 768px){
+    
+    .aside_imgs { 
+      display: none; 
+    }
+  
+
+    .parent { 
+  
+      grid-template-areas:
+        "h h h h h h h h"
+        "m m m m m m m m"
+        "m m m m m m m m"
+        "m m m m m m m m"
+        "a a a a a a a a"
+        "f f f f f f f f";
+    }
+  }
+  
+  /* Medium Screens*/
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    .aside_imgs { 
+      display: none; 
+    }
+    .parent {
+      grid-template-areas:
+        "h h h h h h h h"
+        "m m m m m m m m"
+        "m m m m m m m m"
+        "m m m m m m m m"
+        "m m m m m m m m"
+        "f f f f f f f f";
+    }
+
+
+
+  }
+  
+  /* Big Screens*/
+  @media screen and (min-width:1024px) {
+
+
+    .p1{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size:x-large;
+      background-color: #bbff00;
+      color: rgb(0, 0, 0);
+    }
+    .p2{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: x-large;
+      background-color: #bbff00;
+      color: rgb(0, 0, 0);
+    }
+  
+    .p3{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: x-large;
+      background-color: #bbff00;
+      color: rgb(0, 0, 0);
+    }
+    .erasmusLogo{
+      width:max-content;
+      height:max-content;
+      max-width: 90%;
+      max-width: 100%;
+    }
+    .parent {
+      grid-template-areas:
+        "h h h h h h h h"
+        "m m m m m m m a"
+        "m m m m m m m a"
+        "m m m m m m m a"
+        "m m m m m m m a"
+        "f f f f f f f f";
+    }
+  }
+  
